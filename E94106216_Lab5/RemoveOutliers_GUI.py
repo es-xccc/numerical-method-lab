@@ -42,7 +42,9 @@ def main(page: ft.Page):
         number = int(number_textfield.value)
         data_original.append(number)
         list_text.value = 'This list is ' + str(data_original)
+        number_textfield.value = ''  # 清空輸入框
         page.update()
+
 
     def result_click(e):
         # 可以使用下面寫好的function傳出的變數繼續完成
